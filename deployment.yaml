@@ -2,14 +2,14 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   labels:
-    run: beer
-  name: beer
+    run: random-giphy
+  name: random-giphy
 spec:
   progressDeadlineSeconds: 600
   revisionHistoryLimit: 10
   selector:
     matchLabels:
-      run: beer
+      run: random-giphy
   strategy:
     rollingUpdate:
       maxSurge: 25%
@@ -19,10 +19,10 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
-        run: beer
+        run: random-giphy
     spec:
       containers:
-      - image: registry.arctiqtim.anthos.labs.arctiq.ca/beer/beer-giphy
+      - image: registry.arctiqtim.anthos.labs.arctiq.ca/random-giphy/random-giphy
         imagePullPolicy: Always
         name: beer
         resources: {}

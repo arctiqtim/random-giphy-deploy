@@ -2,14 +2,15 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    run: beer
-  name: beer
+    run: random-giphy
+  name: random-giphy
+  namespace: random-giphy
 spec:
   ports:
   - port: 8080
     protocol: TCP
     targetPort: 8080
   selector:
-    run: beer
+    run: random-giphy
   sessionAffinity: None
   type: ClusterIP
