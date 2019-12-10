@@ -1,1 +1,1 @@
-# random-giphy-deploy
+# beer-giphy-deploy

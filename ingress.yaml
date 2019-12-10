@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+  labels:
+    run: beer
+  name: beer
+spec:
+  rules:
+  - host: beer.arctiqtim.anthos.labs.arctiq.ca
+    http:
+      paths:
+      - backend:
+          serviceName: beer
+          servicePort: 8080
+  tls:
+  - hosts:
+    - beer.arctiqtim.anthos.labs.arctiq.ca
