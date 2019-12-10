@@ -4,7 +4,6 @@ resources:
 - deployment.yaml
 - ingress.yaml
 - service.yaml
-- namespace.yaml
 images:
 - name: registry.arctiqtim.anthos.labs.arctiq.ca/random-giphy/random-giphy-giphy
   newTag: aly
