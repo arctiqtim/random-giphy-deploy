@@ -6,4 +6,4 @@ resources:
 - service.yaml
 images:
 - name: registry.arctiqtim.anthos.labs.arctiq.ca/random-giphy/random-giphy
-  newTag: b7e76f90ea0d8a245ec73fa57474203b1320ba0e
+  newTag: f19ee29d440e11dec0989b6c5b0c29d6a816138f
