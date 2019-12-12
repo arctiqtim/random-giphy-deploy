@@ -5,5 +5,7 @@ resources:
 - ingress.yaml
 - service.yaml
 images:
+- name: registry.arctiqtim-gcp.anthos.labs.arctiq.ca/random-giphy/random-giphy
+  newTag: 046bfe72435ef06f30a853490d4987a883799128
 - name: registry.arctiqtim.anthos.labs.arctiq.ca/random-giphy/random-giphy
   newTag: c47bcdd55c27e47eaf11c73f1e6992067a00c2e7
