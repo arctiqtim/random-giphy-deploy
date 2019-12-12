@@ -9,12 +9,12 @@ metadata:
   namespace: random-giphy
 spec:
   rules:
-  - host: random-giphy.arctiqtim.anthos.labs.arctiq.ca
+  - host: random-giphy.arctiqtim-gcp.anthos.labs.arctiq.ca
     http:
       paths:
       - backend:
-          serviceName: random-giphy
+          serviceName: rollout-bluegreen-active
           servicePort: 8080
   tls:
   - hosts:
-    - random-giphy.arctiqtim.anthos.labs.arctiq.ca
+    - random-giphy.arctiqtim-gcp.anthos.labs.arctiq.ca

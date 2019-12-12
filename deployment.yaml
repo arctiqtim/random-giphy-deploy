@@ -35,7 +35,7 @@ spec:
         run: random-giphy
     spec:
       containers:
-      - image: registry.arctiqtim.anthos.labs.arctiq.ca/random-giphy/random-giphy
+      - image: registry.arctiqtim-gcp.anthos.labs.arctiq.ca/random-giphy/random-giphy
         imagePullPolicy: Always
         name: beer
         resources: {}
